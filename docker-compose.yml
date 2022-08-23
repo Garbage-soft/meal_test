@@ -5,15 +5,6 @@ volumes:
     driver: local
 
 services:
-  # nginx-proxy:
-  #   image: jwilder/nginx-proxy
-  #   ports:
-  #     - 80:80
-  #   restart: always
-  #   depends_on:
-  #     - php
-  #   volumes:
-  #     - /var/run/docker.sock:/tmp/docker.sock:ro
   db:
     container_name: mysql8
     image: mysql:8.0
