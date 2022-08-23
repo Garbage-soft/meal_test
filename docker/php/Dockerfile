@@ -17,7 +17,8 @@ RUN apk add git gmp gmp-dev libmcrypt \
     docker-php-ext-install gmp xml mbstring pdo dom pdo_mysql zip
 
 ENV TZ Asia/Tokyo
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # composerのインストール
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-#RUN composer install --ignore-platform-reqs
+# RUN composer install 
