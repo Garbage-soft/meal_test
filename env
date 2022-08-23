@@ -1,0 +1,7 @@
+PROJECT_PATH=.
+TZ=Asia/Tokyo
+
+DB_DATABASE=laravel
+DB_USERNAME=user
+DB_PASSWORD=password123
+DB_ROOT_PASSWORD=password456
